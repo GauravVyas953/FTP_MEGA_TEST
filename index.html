@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduport - Online Learning Platform</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+    .sidebar {
+      background-color: #f0f4f8;
+      padding: 20px;
+      width: 300px;
+    }
+    .sidebar h4 {
+      margin-bottom: 20px;
+    }
+    .sidebar .menu-item {
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer;
+    }
+    .sidebar input[type="search"] {
+      width: 100%;
+      padding: 8px 12px;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .stat-box {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .stat-box i {
+      font-size: 30px;
+    }
+    .stat-box .text {
+      line-height: 1.4;
+    }
+    .stat-box .number {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      background-color: #fff;
+      border-top: 1px solid #eee;
+    }
+    .footer-column {
+      min-width: 180px;
+      margin-bottom: 20px;
+    }
+    .footer-column h3 {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+    .footer-column ul li a {
+      color: #555;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .social-icons a {
+      display: inline-block;
+      margin-right: 10px;
+      color: #555;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="sidebar">
+  <h2><span style="color: orange">●</span> Eduport</h2>
+  <div class="menu-item"><i class="bi bi-grid-3x3-gap"></i> <a href="https://example.com/category">Category</a></div>
+  <div class="menu-item"><a href="https://example.com/demos">Demos</a></div>
+  <div class="menu-item"><a href="https://example.com/pages">Pages</a></div>
+  <div class="menu-item"><a href="https://example.com/accounts">Accounts</a></div>
+  <div class="menu-item"><a href="https://example.com/megamenu">Megamenu</a></div>
+  <div class="menu-item"><a href="https://example.com/more">...</a></div>
+  <input type="search" placeholder="Search">
+</div>
+
+<div class="stats-grid">
+  <div class="stat-box" style="background-color: #fff6da;">
+    <i class="bi bi-display"></i>
+    <div class="text">
+      <div class="number">10K</div>
+      <div>Online Courses</div>
+    </div>
+  </div>
+  <div class="stat-box" style="background-color: #edf0f5;">
+    <i class="bi bi-person-badge"></i>
+    <div class="text">
+      <div class="number">200+</div>
+      <div>Expert Tutors</div>
+    </div>
+  </div>
+  <div class="stat-box" style="background-color: #f3edfb;">
+    <i class="bi bi-mortarboard"></i>
+    <div class="text">
+      <div class="number">60K+</div>
+      <div>Online Students</div>
+    </div>
+  </div>
+  <div class="stat-box" style="background-color: #e6f8fa;">
+    <i class="bi bi-patch-check"></i>
+    <div class="text">
+      <div class="number">6K+</div>
+      <div>Certified Courses</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-column">
+    <h3><span style="color: orange">●</span> Eduport</h3>
+    <p>Eduport education theme, built specifically for the education centers which is dedicated to teaching and involve learners.</p>
+    <div class="social-icons">
+      <a href="https://instagram.com"><i class="bi bi-instagram"></i></a>
+      <a href="https://facebook.com"><i class="bi bi-facebook"></i></a>
+      <a href="https://twitter.com"><i class="bi bi-twitter"></i></a>
+      <a href="https://linkedin.com"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+  <div class="footer-column">
+    <h3>Company</h3>
+    <ul>
+      <li><a href="https://example.com/about">About us</a></li>
+      <li><a href="https://example.com/contact">Contact us</a></li>
+      <li><a href="https://example.com/blogs">News and Blogs</a></li>
+      <li><a href="https://example.com/library">Library</a></li>
+      <li><a href="https://example.com/career">Career</a></li>
+    </ul>
+  </div>
+  <div class="footer-column">
+    <h3>Community</h3>
+    <ul>
+      <li><a href="https://example.com/docs">Documentation</a></li>
+      <li><a href="https://example.com/faq">FAQ</a></li>
+      <li><a href="https://example.com/forum">Forum</a></li>
+      <li><a href="https://example.com/sitemap">Sitemap</a></li>
+    </ul>
+  </div>
+  <div class="footer-column">
+    <h3>Teaching</h3>
+    <ul>
+      <li><a href="https://example.com/teacher">Become a teacher</a></li>
+      <li><a href="https://example.com/guide">How to guide</a></li>
+      <li><a href="https://example.com/terms">Terms & Conditions</a></li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
